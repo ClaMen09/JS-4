@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Script</title>
+</head>
+<body class="text-center">
+    <div class="bg-warning">
+        <h1>SCRIPT JAVASCRIPT</h1>
+        <h6>Una collezione di script Javascript.</h6>
+    </div>
+
+    <div class="container text-center border border-warning">
+        <div class="row">
+            <div class="col-sm-4 border border-warning p-3">
+                <h3 class="text-primary">COSA FA LO SCRIPT</h3>
+                <img src="./images/JS-image.webp" alt="JS" class="h-75 w-100 d-none d-sm-block">
+                <p class="text-light bg-primary">inserisci un numero e lo script calcolerà i divisori</p>
+            </div>
+            <div class="col-sm-4 col-6 border border-warning p-3">
+                <h3 class="text-primary">IL TUO INPUT</h3>
+                <input type="number" placeholder="inserire numero" id="numero">
+                <button onclick="divisori()" class="btn btn-light border-black">Calcola</button>
+            </div>
+            <div class="col-sm-4 col-6 border border-warning p-3">
+                <h3 class="text-primary">IL RISULTATO</h3>
+                <p id="risultato"></p>
+                <p id="risultatoRosso" class="bg-danger"></p>
+                <p id="risultatoZero"></p>
+                <p id="array">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
